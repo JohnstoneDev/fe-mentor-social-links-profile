@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin : 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens : {
+            laptop : '1440px'
+          },
+          colors: {
+            green : 'hsl(75, 94%, 57%)',
+            white: 'hsl(0, 0%, 100%)',
+            grey : 'hsl(0, 0%, 20%)',
+            'dark-grey' : 'hsl(0, 0%, 12%)',
+            'off-black' : 'hsl(0, 0%, 8%)'
+            },
+            fontSize : {
+              regular :  '14px',
+              large : '20px'
+            },
+            fontWeight : {
+              normal : '400',
+              semibold : '600',
+              bold : '700'
+            },
+            fontFamily : {
+              sans : 'Inter, sans-serif'
+            }
+        }
+      }
+    }
+  </script>
+  <title> Social links profile</title>
+</head>
+<body class="bg-off-black container m-auto grid items-center justify-center text-white font-sans text-normal text-center tracking-wide leading-loose">
+  <div class="bg-dark-grey p-4 mt-36 m-6 laptop:pt-30 laptop:mt-12 rounded-lg">
+    <section class="grid items-center justify-center gap-4">
+      <div class="flex flex-col items-center justify-center gap-3">
+        <img class="rounded-full h-3/5" src="./assets/images/avatar-jessica.jpeg"/>
+        <section class="space-y-1">
+          <h1 class="text-large font-semibold">Jessica Randall</h1>
+          <p class="text-green font-semibold">London, United Kingdom</p>
+          <p>"Front-end developer and avid reader."</p>
+        </section>
+      </div>
+      <div class="flex flex-col gap-3">
+        <button class="p-2 rounded-lg font-bold bg-grey border-grey hover:bg-green hover:text-off-black">GitHub</button>
+        <button class="p-2 rounded-lg font-bold bg-grey border-grey hover:bg-green hover:text-off-black">Frontend Mentor</button>
+        <button class="p-2 rounded-lg font-bold bg-grey border-grey hover:bg-green hover:text-off-black">LinkedIn</button>
+        <button class="p-2 rounded-lg font-bold bg-grey border-grey hover:bg-green hover:text-off-black">Twitter</button>
+        <button class="p-2 rounded-lg font-bold bg-grey border-grey hover:bg-green hover:text-off-black">Instagram</button>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
